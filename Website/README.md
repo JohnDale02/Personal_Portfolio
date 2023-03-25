@@ -1,2 +1,3 @@
-# Folder for all files for portfolio website
+# Folder containing all Website files
+
 

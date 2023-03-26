@@ -1,5 +1,6 @@
 import {
   AcademicCapIcon,
+  BookOpenIcon,
   CalendarIcon,
   DownloadIcon,
   FlagIcon,
@@ -13,7 +14,8 @@ import InstagramIcon from '../components/Icon/InstagramIcon';
 import LinkedInIcon from '../components/Icon/LinkedInIcon';
 import StackOverflowIcon from '../components/Icon/StackOverflowIcon';
 import TwitterIcon from '../components/Icon/TwitterIcon';
-import heroImage from '../images/Landscape_night_Stars.jpg';
+import heroImage from '../images/Nightsky-Background.jpeg';
+//import heroImage from '../images/Computer-Background.jpeg';
 import porfolioImage1 from '../images/portfolio/portfolio-1.jpg';
 import porfolioImage2 from '../images/portfolio/portfolio-2.jpg';
 import porfolioImage3 from '../images/portfolio/portfolio-3.jpg';
@@ -44,8 +46,8 @@ import {
  * Page meta data
  */
 export const homePageMeta: HomepageMeta = {
-  title: 'React Resume Template',
-  description: "Example site built with Tim Baker's react resume template",
+  title: 'John Dale\'s Portfolio',
+  description: "A Website displaying my personal projects.",
 };
 
 /**
@@ -69,18 +71,17 @@ export type SectionId = typeof SectionId[keyof typeof SectionId];
  */
 export const heroData: Hero = {
   imageSrc: heroImage,
-  name: `I'm Tim Baker.`,
+  name: `I'm John Dale.`,
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I'm a Victoria based <strong className="text-stone-100">Full Stack Software Engineer</strong>, currently working
-        at <strong className="text-stone-100">Instant Domains</strong> helping build a modern, mobile-first, domain
-        registrar and site builder.
+        I'm a Massachusetts based <strong className="text-stone-100">Computer Engineering Student</strong>, currently working
+        at <strong className="text-stone-100">iRobot</strong> as a Test Automation intern.
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        In my free time time, you can catch me training in <strong className="text-stone-100">Muay Thai</strong>,
-        plucking my <strong className="text-stone-100">banjo</strong>, or exploring beautiful{' '}
-        <strong className="text-stone-100">Vancouver Island</strong>.
+        In my free time time, you can catch me creating new <strong className="text-stone-100">Spotify</strong>,
+        playlists, weightlifting at the <strong className="text-stone-100">gym</strong>, or proposing outrageous engineering ideas with my genius{' '}
+        <strong className="text-stone-100">Twin</strong>!
       </p>
     </>
   ),
@@ -108,12 +109,12 @@ export const aboutData: About = {
   to use or feel most comfortable with, describing your personality, or whatever else you feel like throwing
   in.`,
   aboutItems: [
-    {label: 'Location', text: 'Victoria, BC', Icon: MapIcon},
-    {label: 'Age', text: '29', Icon: CalendarIcon},
-    {label: 'Nationality', text: 'Canadian / Irish', Icon: FlagIcon},
-    {label: 'Interests', text: 'Motorcycles, Muay Thai, Banjos', Icon: SparklesIcon},
-    {label: 'Study', text: 'University of Victoria', Icon: AcademicCapIcon},
-    {label: 'Employment', text: 'Instant Domains, inc.', Icon: OfficeBuildingIcon},
+    {label: 'Location', text: 'Lincoln, MA', Icon: MapIcon},
+    {label: 'Age', text: '21', Icon: CalendarIcon},
+    {label: 'Nationality', text: 'American / Canadian', Icon: FlagIcon},
+    {label: 'Interests', text: 'Music, Fitness, Computers', Icon: SparklesIcon},
+    {label: 'Study', text: 'University of Massachusetts - Amherst', Icon: AcademicCapIcon},
+    {label: 'Employment', text: 'Student.', Icon: BookOpenIcon},
   ],
 };
 
@@ -283,9 +284,9 @@ export const education: TimelineItem[] = [
 
 export const experience: TimelineItem[] = [
   {
-    date: 'March 2010 - Present',
-    location: 'Awesome Development Company',
-    title: 'Senior UX Engineer',
+    date: 'June 2023 - Present',
+    location: 'MITRE',
+    title: 'Computer Science Intern',
     content: (
       <p>
         Describe work, special projects, notable achievements, what technologies you have been working with, and
@@ -294,9 +295,20 @@ export const experience: TimelineItem[] = [
     ),
   },
   {
-    date: 'March 2007 - February 2010',
-    location: 'Garage Startup Studio',
-    title: 'Junior bug fixer',
+    date: 'January 2023 - May 2023',
+    location: 'iRobot',
+    title: 'Test Automation Intern',
+    content: (
+      <p>
+        Describe work, special projects, notable achievements, what technologies you have been working with, and
+        anything else that would be useful for an employer to know.
+      </p>
+    ),
+  },
+  {
+    date: 'May 2022 - August 2023',
+    location: 'UMASS Amherst - Nation Science Foundation',
+    title: 'Cyber-Pysical Systems Student Reseacher',
     content: (
       <p>
         Describe work, special projects, notable achievements, what technologies you have been working with, and
@@ -340,13 +352,14 @@ export const contact: ContactSection = {
   items: [
     {
       type: ContactType.Email,
-      text: 'reachout@timbaker.me',
+      text: 'johnkdale02@gmail.com',
       href: 'mailto:reachout@timbaker.me',
     },
     {
       type: ContactType.Location,
-      text: 'Victoria BC, Canada',
-      href: 'https://www.google.ca/maps/place/Victoria,+BC/@48.4262362,-123.376775,14z',
+      text: 'Boston, Massachusetts',
+      
+      href: 'https://www.google.com/maps/place/Boston,+MA/@42.3145186,-71.1103675,11z',
     },
     {
       type: ContactType.Instagram,
@@ -355,8 +368,8 @@ export const contact: ContactSection = {
     },
     {
       type: ContactType.Github,
-      text: 'tbakerx',
-      href: 'https://github.com/tbakerx',
+      text: 'johndale02',
+      href: 'https://github.com/johndale02',
     },
   ],
 };
@@ -365,7 +378,7 @@ export const contact: ContactSection = {
  * Social items
  */
 export const socialLinks: Social[] = [
-  {label: 'Github', Icon: GithubIcon, href: 'https://github.com/tbakerx'},
+  {label: 'Github', Icon: GithubIcon, href: 'https://github.com/johndale02'},
   {label: 'Stack Overflow', Icon: StackOverflowIcon, href: 'https://stackoverflow.com/users/8553186/tim-baker'},
   {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/timbakerx/'},
   {label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/tbakerx/'},

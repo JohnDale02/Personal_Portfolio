@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Racing+Sans+One&family=Roboto+Slab:wght@900&display=swap');
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+ 
+}
+
+body{
+  background: black;
+}
+
+.markdown, 
+h1,
+h4,
+p,
+a{
+  color: white;
+  text-decoration: none;
+}
+
+h1{
+  font-family: 'Roboto Slab', serif;
+
+}
+
+ul{
+  list-style-type: none;
+}
+
+.btn {
+  padding: 12px 32px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  background: rgb(248,217,15);
+  color: #222;
+  border: 1px solid #fff;
+  font-family: 'Racing Sans One', cursive;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn-light {
+  background: transparent;
+  color: #fff;
+}
+
+.btn:hover {
+  background: rgba(255,255,255,0.2);
+  color: #fff;
+  transition: 0.3s;
+}
